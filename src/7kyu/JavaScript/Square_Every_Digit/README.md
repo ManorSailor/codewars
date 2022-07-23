@@ -9,11 +9,8 @@ For example, if we run 9119 through the function, 811181 will come out, because 
 _Note: The function accepts an integer and returns an integer_
 
 ##### Tags: `Mathematics, Fundamentals` 
-
 ##### Creator: [Mysterious Magenta](https://www.codewars.com/users/MysteriousMagenta)
-
 ##### Completed On: `17-07-2022`
-
 ##### Last Attempt On: `17-07-2022`
 
 ---
