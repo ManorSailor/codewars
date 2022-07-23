@@ -19,7 +19,7 @@ solution('abc', 'd') // returns false
 
 ###### Completed On: `17-07-2022`
 
-###### Last Attempt On: `18-07-2022`
+###### Last Attempt On: `17-07-2022`
 
 ---
 
