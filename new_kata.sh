@@ -31,9 +31,6 @@ tags=$(jq .tags <<< "$data" | tr -d "\"\n[] " | sed -E 's/,/, /g')
 creator=$(jq .createdBy.username <<< "$data" | tr -d "\'\"")
 creator_url=$(jq .createdBy.url <<< "$data" | tr -d "\'\"")
 
-# Directory path
-echo "${0%/}"
-
 # Create a directory for the kata
 mkdir -p ./"$rank"/"${foo:="JavaScript"}"/"${slug}"
 
