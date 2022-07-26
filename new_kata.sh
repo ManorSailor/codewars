@@ -18,8 +18,6 @@ data=$(curl "$API")
 # Check if API response returned a failure, exit the script
 [[ $(jq .success <<< $data) == "false" ]] && echo "Invalid kata ID" && exit 1
 
-echo $(jq .tags <<< "$data")
-
 # Store the required data in variables
 # TODO: Improve this shit pile of code
 name=$(jq .name <<< "$data" | tr -d "\'\"")
