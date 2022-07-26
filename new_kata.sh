@@ -30,13 +30,13 @@ creator=$(jq .createdBy.username <<< "$data" | tr -d "\'\"")
 creator_url=$(jq .createdBy.url <<< "$data" | tr -d "\'\"")
 
 # Create a directory for the kata
-mkdir -p ./"$rank"/"${foo:="JavaScript"}"/"${slug}"
+mkdir -p ./src/"$rank"/"${foo:="JavaScript"}"/"${slug}"
 
 # Create a file called app.js in the target directory
-touch ./"$rank"/"${foo:="JavaScript"}"/"${slug}"/app.js
+touch ./src/"$rank"/"${foo:="JavaScript"}"/"${slug}"/app.js
 
 # Generate a README using heredoc 
-cat <<README >> ./"$rank"/"${foo:="JavaScript"}"/"${slug}"/README.md
+cat <<README >> ./src/"$rank"/"${foo:="JavaScript"}"/"${slug}"/README.md
 ## [$name]($url)
 ---
 ### Description
