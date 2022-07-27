@@ -1,6 +1,6 @@
 #!/bin/bash
 # This scripts generates the dummy template for storing my kata solutions
-# In its current stage, the script is really barebones & code can be removed immensely
+# In its current stage, the script is really barebones & code can be improved tremendously
 # What you see here is the MVP. Updates to this will come eventually
 
 # Check if the user provided a kata ID or not
