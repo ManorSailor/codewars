@@ -21,7 +21,7 @@ data=$(curl "$API")
 # Store the required data in variables
 # TODO: Improve this shit pile of code
 name=$(jq .name <<< "$data" | tr -d "\'\"")
-slug=$(tr -s " " "-" <<< "$name")
+slug=$(tr -s " " "_" <<< "$name")
 url=$(jq .url <<< "$data" | tr -d "\'\"")
 rank=$(jq .rank.name <<< "$data" | tr -d "\" ")
 description=$(jq -r .description <<< "$data" | tr -d "\'\"")
